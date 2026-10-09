@@ -1,7 +1,7 @@
 site_name: Руководство по стилю документации
 site_description: Правила написания и оформления документации программного проекта
-site_url: https://YOUR-USERNAME.github.io/style-guide-project/
-repo_url: https://github.com/YOUR-USERNAME/style-guide-project
+site_url: https://MKYrii.github.io/style-guide-project/
+repo_url: https://github.com/MKYrii/style-guide-project
 edit_uri: edit/main/docs/
 
 theme:
