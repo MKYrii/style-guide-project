@@ -1,0 +1,32 @@
+site_name: Руководство по стилю документации
+site_description: Правила написания и оформления документации программного проекта
+site_url: https://YOUR-USERNAME.github.io/style-guide-project/
+repo_url: https://github.com/YOUR-USERNAME/style-guide-project
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.top
+    - content.action.edit
+    - search.suggest
+
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+
+nav:
+  - Главная: index.md
+  - Общие принципы: principles.md
+  - Стиль изложения: language.md
+  - Орфография и пунктуация: spelling.md
+  - Оформление текста: formatting.md
+  - Правила работы с Markdown: markdown.md
+  - Шаблоны документов: structure.md
+  - Точечные рекомендации: tips.md
+  - Словарь и глоссарий: glossary.md
+  - Доступность текста: accessibility.md
