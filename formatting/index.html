@@ -722,12 +722,40 @@
 <li>В конце заголовка не ставьте точку.</li>
 <li>Заголовок — не длиннее 60 символов.</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Плохо</th>
+<th>Хорошо</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>## Установка.</code></td>
+<td><code>## Установка</code></td>
+</tr>
+<tr>
+<td><code>## Шаги</code> и сразу <code>#### Шаг 1</code></td>
+<td><code>## Шаги</code> и затем <code>### Шаг 1</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="_3">Списки<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Маркированный список — для равноправных элементов, нумерованный — для последовательных шагов.</li>
 <li>Все пункты списка начинаются одинаково: все с глагола или все с существительного.</li>
 <li>Не вкладывайте списки глубже двух уровней.</li>
 </ul>
+<p>Плохо: пункты начинаются по-разному.</p>
+<pre><code class="language-markdown">- Установка
+- Нужно настроить окружение
+- Запуск приложения
+</code></pre>
+<p>Хорошо: все пункты начинаются с глагола.</p>
+<pre><code class="language-markdown">- Установите приложение.
+- Настройте окружение.
+- Запустите приложение.
+</code></pre>
 <h2 id="_4">Выделение<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -773,6 +801,28 @@ mkdocs serve
 <li>Первая строка — заголовки.</li>
 <li>Не более 5 столбцов.</li>
 </ul>
+<p>Пример: сравнение по нескольким признакам.</p>
+<table>
+<thead>
+<tr>
+<th>Формат</th>
+<th>Размер</th>
+<th>Поддержка таблиц</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Markdown</td>
+<td>Малый</td>
+<td>Да</td>
+</tr>
+<tr>
+<td>PDF</td>
+<td>Большой</td>
+<td>Да</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_7">Изображения<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Формат: PNG для снимков экрана, SVG для схем.</li>
@@ -780,6 +830,24 @@ mkdocs serve
 <li>Обязательно задавайте альтернативный текст.</li>
 <li>Не размещайте важную информацию только на изображении.</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Плохо</th>
+<th>Хорошо</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Снимок 1.PNG</code></td>
+<td><code>settings-security.png</code></td>
+</tr>
+<tr>
+<td><code>![](settings-security.png)</code></td>
+<td><code>![Вкладка «Безопасность» в настройках](settings-security.png)</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="_8">Примечания<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
 <p>Для предупреждений используйте блоки admonition:</p>
 <pre><code class="language-markdown">!!! warning &quot;Внимание&quot;

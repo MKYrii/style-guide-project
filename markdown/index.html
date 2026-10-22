@@ -490,18 +490,7 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Примечания
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Чего не делать
+        Не делать
       
     </span>
   </a>
@@ -693,18 +682,7 @@
   <a href="#_7" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Примечания
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_8" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Чего не делать
+        Не делать
       
     </span>
   </a>
@@ -753,6 +731,15 @@
 <li>Вложенность — через три пробела для нумерованных и два пробела для маркированных списков.</li>
 <li>Блоки кода внутри пункта списка выравниваются по тексту пункта.</li>
 </ul>
+<p>Пример вложенного нумерованного списка с блоком кода:</p>
+<ol>
+<li>Установите зависимости:</li>
+</ol>
+<p><code>bash
+   pip install -r requirements.txt</code></p>
+<ol>
+<li>Запустите сервер.</li>
+</ol>
 <h2 id="_3">Ссылки<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Ссылки между разделами руководства — относительные: <code>[Оформление](formatting.md)</code>.</li>
@@ -760,6 +747,24 @@
 <li>Текст ссылки описывает цель, а не «здесь».</li>
 <li>Перед публикацией сборка с <code>mkdocs build --strict</code> не должна выдавать предупреждений о битых ссылках.</li>
 </ul>
+<table>
+<thead>
+<tr>
+<th>Плохо</th>
+<th>Хорошо</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>[здесь](https://github.com)</code></td>
+<td><code>[Репозиторий на GitHub](https://github.com)</code></td>
+</tr>
+<tr>
+<td><code>[Оформление](https://site.com/formatting.md)</code></td>
+<td><code>[Оформление](formatting.md)</code></td>
+</tr>
+</tbody>
+</table>
 <h2 id="_4">Код<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Встроенный код — в обратных апострофах: <code>mkdocs.yml</code>.</li>
@@ -772,18 +777,32 @@
 <li>Текст в ячейке — одна короткая мысль, без переносов.</li>
 <li>Если таблица шире пяти столбцов, разбейте её на две.</li>
 </ul>
+<p>Пример:</p>
+<table>
+<thead>
+<tr>
+<th>Команда</th>
+<th>Назначение</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>mkdocs serve</code></td>
+<td>Запустить сервер</td>
+</tr>
+<tr>
+<td><code>mkdocs build</code></td>
+<td>Собрать сайт</td>
+</tr>
+</tbody>
+</table>
 <h2 id="_6">Изображения<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Файлы лежат в <code>docs/assets/</code>, имя — строчными латинскими буквами через дефис.</li>
 <li>Синтаксис: <code>![Описание изображения](assets/schema.png)</code>.</li>
 <li>Alt-текст обязателен (см. [Доступность текста]).</li>
 </ul>
-<h2 id="_7">Примечания<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
-<p>Используйте блоки admonition:</p>
-<pre><code class="language-markdown">!!! note &quot;Заголовок&quot;
-    Текст примечания с отступом в четыре пробела.
-</code></pre>
-<h2 id="_8">Чего не делать<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h2 id="_7">Не делать<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Не вставляйте HTML там, где достаточно Markdown.</li>
 <li>Не используйте заголовки для визуального выделения текста.</li>
